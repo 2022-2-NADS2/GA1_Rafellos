@@ -1,0 +1,22 @@
+
+<div>
+   
+    <main>
+         {{#each pedidos}}
+        <div id="card2">
+            <h3>Pedido</h3>
+            <h5>Dados do cliente:</h5>
+            <label for="">Nome: {{this.nome}}</label>
+            <label for="">E-mail: {{this.email}}</label>
+            <label for="">Assunto: {{this.assunto}}</label>
+            <label for="">telefone: {{this.telefone}}</label>
+            <label for="">Descrição: {{this.descricao}}</label>
+            <form action="/remove" method="post">
+                <input type="hidden" name="id" value="{{this.id}}">
+            <button type="submit" value="Excluir">X</button>
+            </form> 
+        </div>
+          {{/each}}
+    </main>
+  
+</div>

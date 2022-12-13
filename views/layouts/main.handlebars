@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCC</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="/css/{{style}}">
+</head>
+<body class="image">
+
+<header>
+        <div id="div-header">
+            <img id="img-header" src="./img/responsabilidade.png" alt="">
+        </div>
+<nav id="nav-header">
+    <ul id="ul1-nav-header">
+        <li id="li1-ul-nav-header"><a href="/home">Home</a></li>
+        <li id="li3-ul-nav-header"><a href="/contato">Contato</a></li>
+        {{#if session.userid}}
+        <li id="li2-ul-nav-header"><a href="/pedidos">Pedidos</a></li>
+        {{else}}
+        <li id="li2-ul-nav-header"><a href="/login">Entrar</a></li>
+        {{/if}}
+    </ul>
+        <!-- url autenicação -->
+        {{#if session.userid}}
+    <ul id="ul2-nav-header">
+        <li id="li1-ul2-nav-header"><a href="/register">Cadastro</a></li>
+        <li id="li2-ul2-nav-header">|</li>
+        <li id="li3-ul2-nav-header"><a href="/logout">Sair</a></li>
+        
+        
+        {{/if}}
+    </ul>
+</nav>
+</header>
+
+    
+    <!-- {{{ body }}} -->
+    {{#if messages.message}}
+    <div class="message">
+        {{messages.message}}
+    </div>
+    {{/if}}
+    {{{ body }}}
+    <footer>
+ 
+            <img src="./img/simbolo-de-copyright.png" alt="">
+
+            <p>2022 Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

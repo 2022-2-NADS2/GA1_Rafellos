@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 8vh 82vh 10vh;
+}
+
+.image {
+    background-image: url('../img/Grupo6.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 88vh;
+    border: none;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+header nav #ul1-nav-header a{
+    color: #44C361;
+}
+
+header nav #ul2-nav-header a{
+    color: #fff;
+}
+
+
+/*------------------------HEADER----------------------------*/
+
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: 8vh;
+    grid-template-columns:10vw 90vw;
+}
+
+#div-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+#img-header{
+    padding-top: 8px;
+    height: 8vh;
+    width: 40%;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 60vw 30vw;
+  
+}
+
+#ul1-nav-header {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    color:  #44C361;
+    background-color: #fff;
+    padding-left: 2vw;
+    font-size: 12px;
+    
+}
+
+#ul2-nav-header {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+    
+}
+#li1-ul2-nav-header{
+   border: 2px solid #fff;
+    padding: 2%;
+    margin-right:2px;
+    width: 8vw;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 12px;
+}
+
+#li3-ul2-nav-header{
+    border: 2px solid #fff;
+    padding: 2%;
+    width: 9.2vw;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 12px;
+}
+a{
+ color: #44C361;
+ font-size: 18px;
+}
+
+/*----------------------------------------------MAIN-------------------------------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    align-items: center;
+    background: #ADE5B9
+}
+
+main div{
+    display: flex;
+    justify-content: end;
+}
+main div img{
+    height: 70vh;
+    width: 70%;
+}
+
+main aside div{
+    background: #fff;
+    height: 70vh;
+    width: 60%;
+    margin-left: 5%;
+    -webkit-box-shadow: 2px 3px 4px 8px rgba(0,0,0,0.04);
+    -moz-box-shadow: 2px 3px 4px 8px rgba(0,0,0,0.04);
+    box-shadow: 2px 3px 4px 8px rgba(0,0,0,0.04);
+    border-radius: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+main aside div form{
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 4fr;
+    height: 60vh;
+    width:80%;
+    padding: 5%;
+    -webkit-box-shadow: 2px 3px 4px 8px rgba(0,0,0,0.04);
+    -moz-box-shadow: 2px 3px 4px 8px rgba(0,0,0,0.04);
+    box-shadow: 2px 3px 4px 8px rgba(0,0,0,0.04);
+    border-radius: 5%;
+}
+
+.label-form-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #44C361;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.label2-form-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #44C361;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input1-form-main{
+    height: 5vh;
+    border-radius: 12vh;
+    border: 0.5px solid #B2BBB4;
+    border-radius: 2vh;
+    text-align: center;
+
+}
+#input2-form-main{
+    margin-top: 2vh;
+    height: 5vh;
+    border-radius: 2vh;
+    border: 0.5px solid #B2BBB4;
+    text-align: center;
+    
+}
+#input3-form-main{
+    margin-top: 2vh;
+    height: 5vh;
+    border-radius: 2vh;
+    border: 0.5px solid #B2BBB4;
+    text-align: center;
+    
+}
+#input4-form-main{
+    margin-top: 2vh;
+    height: 10vh;
+    border-radius: 2vh;
+    border: 0.5px solid #B2BBB4;
+    text-align: center;
+    
+}
+
+
+main aside div form div {
+    display: flex;
+    justify-content: center;
+    width: 20vh;
+    height: 0.5px;
+    border: 1px solid #B2BBB4;
+}
+main aside div form button {
+    font-size: 20px;
+    margin-top: 1vh;
+    height: 5vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 12vh;
+    border: none;
+    color: #fff;
+    background: #44C361;
+}
+
+/*----------------------------FOOTER--------------------------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: #44C361;
+    
+}
+
+
+
+footer img {
+    height: 2vh;
+}
+
+footer p{
+    padding-left: 1vw;
+    margin-right: 1vw;
+    color: #fff;
+    font-size: 10px;
+}
